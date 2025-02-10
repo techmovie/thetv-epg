@@ -1,0 +1,354 @@
+- name: WNBC (New York) NBC East
+  path: /tv/wnbc-new-york-nbc-east-live-stream/
+  id: "9200016000"
+- name: CNBC
+  path: /tv/cnbc-live-stream/
+  id: "9200009145"
+- name: WE tv
+  path: /tv/we-tv-live-stream/
+  id: "9233003770"
+- name: BET Her
+  path: /tv/bet-her-live-stream/
+  id: "9200020665"
+- name: Destination America
+  path: /tv/destination-america-live-stream/
+  id: "9200014472"
+- name: ESPN
+  path: /tv/espn-live-stream/
+  id: "9233007996"
+- name: WABC (New York) ABC East
+  path: /tv/wabc-new-york-abc-east-live-stream/
+  id: "9200000057"
+- name: The Movie Channel East
+  path: /tv/the-movie-channel-east-live-stream/
+  id: "9233013260"
+- name: ESPNews
+  path: /tv/espnews-live-stream/
+  id: "9200006523"
+- name: Tennis Channel
+  path: /tv/tennis-channel-live-stream/
+  id: "9200004566"
+- name: CNN
+  path: /tv/cnn-live-stream/
+  id: "9233008130"
+- name: WCBS (New York) CBS East
+  path: /tv/wcbs-new-york-cbs-east-live-stream/
+  id: "9233011201"
+- name: CSPAN
+  path: /tv/cspan-live-stream/
+  id: "9233000277"
+- name: The CW (WPIX New York)
+  path: /tv/the-cw-live-stream/
+  id: "9200002881"
+- name: CSPAN 2
+  path: /tv/cspan-2-live-stream/
+  id: "9233013638"
+- name: ESPN2
+  path: /tv/espn2-live-stream/
+  id: "9200016131"
+- name: Comedy Central
+  path: /tv/comedy-central-live-stream/
+  id: "9233009509"
+- name: Crime & Investigation HD
+  path: /tv/crime-investigation-hd-live-stream/
+  id: "9200009215"
+- name: BBC World News HD
+  path: /tv/bbc-world-news-hd-live-stream/
+  id: "9233000381"
+- name: BET
+  path: /tv/bet-live-stream/
+  id: "9233005931"
+- name: American Heroes Channel
+  path: /tv/american-heroes-channel-live-stream/
+  id: "9233015768"
+- name: ESPNU
+  path: /tv/espnu-live-stream/
+  id: "9233009496"
+- name: Lifetime
+  path: /tv/lifetime-live-stream/
+  id: "9200000502"
+- name: Food Network
+  path: /tv/food-network-live-stream/
+  id: "9233005598"
+- name: AMC
+  path: /tv/amc-live-stream/
+  id: "9200020107"
+- name: A&E
+  path: /tv/ae-live-stream/
+  id: "9200009045"
+- name: Cartoon Network
+  path: /tv/cartoon-network-live-stream/
+  id: "9233001926"
+- name: WNYW (New York) FOX East
+  path: /tv/wnyw-new-york-fox-east-live-stream/
+  id: "9233003497"
+- name: Boomerang
+  path: /tv/boomerang-live-stream/
+  id: "9233008951"
+- name: Bloomberg TV
+  path: /tv/bloomberg-tv-live-stream/
+  id: "9233015798"
+- name: ACC Network
+  path: /tv/acc-network-live-stream/
+  id: "9233011061"
+- name: Bravo
+  path: /tv/bravo-live-stream/
+  id: "9200020094"
+- name: FOX News Channel
+  path: /tv/fox-news-channel-live-stream/
+  id: "9233006969"
+- name: Freeform
+  path: /tv/freeform-live-stream/
+  id: "9200000497"
+- name: Animal Planet
+  path: /tv/animal-planet-live-stream/
+  id: "9233013462"
+- name: Investigation Discovery
+  path: /tv/investigation-discovery-live-stream/
+  id: "9200006654"
+- name: Golf Channel
+  path: /tv/golf-channel-live-stream/
+  id: "9200011865"
+- name: MotorTrend HD
+  path: /tv/motortrend-hd-live-stream/
+  id: "9233003479"
+- name: Univision East
+  path: /tv/univision-east-live-stream/
+  id: "9200000682"
+- name: BBC America
+  path: /tv/bbc-america-live-stream/
+  id: "9200014701"
+- name: FX Movie
+  path: /tv/fx-movie-live-stream/
+  id: "9200001026"
+- name: MoreMAX
+  path: /tv/moremax-live-stream/
+  id: "9200006529"
+- name: MTV
+  path: /tv/mtv-live-stream/
+  id: "9233015501"
+- name: Telemundo East
+  path: /tv/telemundo-east-live-stream/
+  id: "9266072146"
+- name: E!
+  path: /tv/e-live-stream/
+  id: "9233003794"
+- name: Hallmark Movies & Mysteries HD
+  path: /tv/hallmark-movies-mysteries-hd-live-stream/
+  id: "9200020115"
+- name: Disney Junior
+  path: /tv/disney-junior-live-stream/
+  id: "9200016560"
+- name: HLN
+  path: /tv/hln-live-stream/
+  id: "9233005762"
+- name: TV One HD
+  path: /tv/tv-one-hd-live-stream/
+  id: "9200000547"
+- name: History
+  path: /tv/history-live-stream/
+  id: "9200014439"
+- name: Hallmark Drama HD
+  path: /tv/hallmark-drama-hd-live-stream/
+  id: "9233012938"
+- name: CMT
+  path: /tv/cmt-live-stream/
+  id: "9233000169"
+- name: ION Television East HD
+  path: /tv/ion-television-east-hd-live-stream/
+  id: "9200014588"
+- name: SundanceTV HD
+  path: /tv/sundancetv-hd-live-stream/
+  id: "9200018375"
+- name: NFL Red Zone
+  path: /tv/nfl-red-zone/
+  id: "703"
+- name: Discovery Life
+  path: /tv/discovery-life-live-stream/
+  id: "9200007461"
+- name: Newsmax TV
+  path: /tv/newsmax-tv/
+  id: "9200020810"
+- name: SHOWTIME 2
+  path: /tv/showtime-2-live-stream/
+  id: "9200014450"
+- name: FOX Sports 1
+  path: /tv/fox-sports-1-live-stream/
+  id: "9233000539"
+- name: LMN
+  path: /tv/lmn-live-stream/
+  id: "9233009429"
+- name: HGTV
+  path: /tv/hgtv-live-stream/
+  id: "9200004467"
+- name: IFC
+  path: /tv/ifc-live-stream/
+  id: "9233006961"
+- name: FXX
+  path: /tv/fxx-live-stream/
+  id: "9200014910"
+- name: HBO 2 East
+  path: /tv/hbo-2-east-live-stream/
+  id: "9233013492"
+- name: SEC Network
+  path: /tv/sec-network-live-stream/
+  id: "9233002484"
+- name: Cooking Channel
+  path: /tv/cooking-channel-live-stream/
+  id: "9233015616"
+- name: MSNBC
+  path: /tv/msnbc-live-stream/
+  id: "9200009294"
+- name: Outdoor Channel
+  path: /tv/outdoor-channel-live-stream/
+  id: "9200006358"
+- name: Hallmark
+  path: /tv/hallmark-live-stream/
+  id: "9233015586"
+- name: FYI
+  path: /tv/fyi-live-stream/
+  id: "9233000161"
+- name: OWN
+  path: /tv/own-live-stream/
+  id: "9200004740"
+- name: NBA TV
+  path: /tv/nba-tv-live-stream/
+  id: "9233005688"
+- name: PBS 13 (WNET) New York
+  path: /tv/pbs-13-wnet-new-york-live-stream/
+  id: "9200000048"
+- name: NHL Network
+  path: /tv/nhl-network-live-stream/
+  id: "9200016261"
+- name: STARZ East
+  path: /tv/starz-east-live-stream/
+  id: "9233005475"
+- name: Discovery Family Channel
+  path: /tv/discovery-family-channel-live-stream/
+  id: "9233015612"
+- name: Showtime (E)
+  path: /tv/showtime-e-live-stream/
+  id: "9233011188"
+- name: HBO East
+  path: /tv/hbo-east-live-stream/
+  id: "9200008780"
+- name: Science
+  path: /tv/science-live-stream/
+  id: "9200000462"
+- name: TBS
+  path: /tv/tbs-live-stream/
+  id: "9233011348"
+- name: NFL Network
+  path: /tv/nfl-network-live-stream/
+  id: "9233000078"
+- name: Nick Jr.
+  path: /tv/nick-jr-live-stream/
+  id: "9233007153"
+- name: FX
+  path: /tv/fx-live-stream/
+  id: "9233006959"
+- name: FOX Sports 2
+  path: /tv/fox-sports-2-live-stream/
+  id: "9233012008"
+- name: MeTV Toons
+  path: /tv/metv-toons-live-stream/
+  id: "9233000733"
+- name: Discovery
+  path: /tv/discovery-live-stream/
+  id: "9233001914"
+- name: SYFY
+  path: /tv/syfy-live-stream/
+  id: "9200002505"
+- name: VH1
+  path: /tv/vh1-live-stream/
+  id: "9233011530"
+- name: MLB Network
+  path: /tv/mlb-network-live-stream/
+  id: "9200002579"
+- name: HBO Comedy HD
+  path: /tv/hbo-comedy-hd-live-stream/
+  id: "9233003785"
+- name: Disney XD
+  path: /tv/disney-xd-live-stream/
+  id: "9233008150"
+- name: MovieMAX
+  path: /tv/moviemax-live-stream/
+  id: "9233015922"
+- name: TeenNick
+  path: /tv/teennick-live-stream/
+  id: "9266072256"
+- name: Travel Channel
+  path: /tv/travel-channel-live-stream/
+  id: "9233008142"
+- name: HBO Zone HD
+  path: /tv/hbo-zone-hd-live-stream/
+  id: "9233009491"
+- name: The Weather Channel
+  path: /tv/the-weather-channel-live-stream/
+  id: "9200016258"
+- name: Big Ten Network
+  path: /tv/big-ten-network-live-stream/
+  id: "9233015438"
+- name: Nicktoons
+  path: /tv/nicktoons-live-stream/
+  id: "9233013985"
+- name: Cinemax
+  path: /tv/cinemax-live-stream/
+  id: "9200000143"
+- name: Oxygen True Crime
+  path: /tv/oxygen-true-crime-live-stream/
+  id: "9200012145"
+- name: Logo
+  path: /tv/logo-live-stream/
+  id: "9233008445"
+- name: TLC
+  path: /tv/tlc-live-stream/
+  id: "9200016249"
+- name: Nat Geo WILD
+  path: /tv/nat-geo-wild-live-stream/
+  id: "9233002054"
+- name: USA Network
+  path: /tv/usa-network-live-stream/
+  id: "9200009133"
+- name: CBS Sports Network
+  path: /tv/cbs-sports-network-live-stream/
+  id: "9233015468"
+- name: Fox Business Network
+  path: /tv/fox-business-network-live-stream/
+  id: "9200011877"
+- name: TCM
+  path: /tv/tcm-live-stream/
+  id: "9233003866"
+- name: HBO Signature
+  path: /tv/hbo-signature-live-stream/
+  id: "9200002532"
+- name: Nickelodeon East
+  path: /tv/nickelodeon-east-live-stream/
+  id: "9233011497"
+- name: Disney Channel (East)
+  path: /tv/disney-channel-east-live-stream/
+  id: "9200011893"
+- name: Universal Kids
+  path: /tv/universal-kids-live-stream/
+  id: "9233009640"
+- name: ReelzChannel
+  path: /tv/reelzchannel-live-stream/
+  id: "9233015619"
+- name: HBO Family East
+  path: /tv/hbo-family-east-live-stream/
+  id: "9233000175"
+- name: National Geographic
+  path: /tv/national-geographic-live-stream/
+  id: "9233009337"
+- name: TNT
+  path: /tv/tnt-live-stream/
+  id: "9200008879"
+- name: truTV
+  path: /tv/trutv-live-stream/
+  id: "9233015561"
+- name: VICE
+  path: /tv/vice-live-stream/
+  id: "9200000630"
+- name: Fuse HD
+  path: /tv/fuse-hd-live-stream/
+  id: "9233011488"
