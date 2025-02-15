@@ -4,6 +4,7 @@ import (
 	"encoding/xml"
 	"fmt"
 	"os"
+	"strconv"
 	"sync"
 	"thetv-apg/consts"
 	"thetv-apg/tv"
@@ -29,6 +30,7 @@ type EPGProgramme struct {
 	Start   string   `xml:"start,attr"`
 	Stop    string   `xml:"stop,attr"`
 	Title   string   `xml:"title"`
+	Desc    string   `xml:"desc"`
 }
 
 func GenerateEPGForTVList() error {
@@ -45,7 +47,11 @@ func GenerateEPGForTVList() error {
 		wg.Add(1)
 		go func(channel *tv.TheTV) {
 			defer wg.Done()
-			tvSchedule, err := tv.GetTVSchedule(channel.ID, channel.Path)
+			path := channel.Path
+			if channel.PathAlias != "" {
+				path = channel.PathAlias
+			}
+			tvSchedule, err := tv.GetTVSchedule(channel.ID, path)
 			if err != nil {
 				fmt.Printf("Warning: failed to fetch schedule for channel %s (%s): %v\n", channel.Name, channel.ID, err)
 				return
@@ -57,17 +63,22 @@ func GenerateEPGForTVList() error {
 			})
 			mu.Unlock()
 			for _, schedule := range tvSchedule {
-				startTime := time.Unix(schedule.StartTime, 0).In(time.UTC).Format(consts.TIME_FORMAT)
-				endTime := time.Unix(schedule.EndTime, 0).In(time.UTC).Format(consts.TIME_FORMAT)
-				title := schedule.Title
-				if schedule.EpisodeTitle != "" {
-					title += " - " + schedule.EpisodeTitle
+				startTime, err := time.Parse("2006-01-02T15:04:05+00:00", schedule.DataListDatetime)
+				if err != nil {
+					fmt.Println("Error parsing time:", err)
+					continue
+				}
+				duration, _ := strconv.Atoi(schedule.DataDuration)
+				endTime := startTime.Add(time.Duration(duration) * time.Minute)
+				title := schedule.DataShowName
+				if schedule.DataEpisodeTitle != "" {
+					title += " - " + schedule.DataEpisodeTitle
 				}
 				mu.Lock()
 				res.Programmes = append(res.Programmes, &EPGProgramme{
 					Channel: channel.ID,
-					Start:   startTime,
-					Stop:    endTime,
+					Start:   startTime.Format(consts.TIME_FORMAT),
+					Stop:    endTime.Format(consts.TIME_FORMAT),
 					Title:   title,
 				})
 				mu.Unlock()

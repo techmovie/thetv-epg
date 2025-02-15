@@ -2,8 +2,8 @@ name: Update EPG and YAML
 
 on:
   schedule:
-    - cron: "0 */24 * * *" 
-  workflow_dispatch: 
+    - cron: '0 */24 * * *'
+  workflow_dispatch:
 
 jobs:
   update-epg:
@@ -21,7 +21,7 @@ jobs:
           go-version: '1.23.5'
 
       - name: Install Dependencies
-        run: go mod tidy  
+        run: go mod tidy
 
       - name: Run Update Script
         run: go run main.go

@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"os"
 	"regexp"
+	"strings"
 	"sync"
-	"sync/atomic"
 	"thetv-apg/consts"
 	"time"
 
@@ -17,16 +17,19 @@ import (
 )
 
 type TheTV struct {
-	Name string `json:"name"`
-	Path string `json:"path"`
-	ID   string `json:"id"`
+	Name       string `yaml:"name"`
+	StreamName string `yaml:"streamName"`
+	Path       string `yaml:"path"`
+	ID         string `yaml:"id"`
+	Logo       string `yaml:"logo"`
+	PathAlias  string `yaml:"pathAlias"`
 }
 
 type TVSchedule struct {
-	Title        string `json:"title"`
-	StartTime    int64  `json:"startTime"`
-	EndTime      int64  `json:"endTime"`
-	EpisodeTitle string `json:"episodeTitle"`
+	DataShowName     string `json:"data-showname"`
+	DataListDatetime string `json:"data-listdatetime"`
+	DataDuration     string `json:"data-duration"`
+	DataEpisodeTitle string `json:"data-episodetitle"`
 }
 
 var httpClient = &http.Client{
@@ -56,7 +59,7 @@ func fetchUrl(url string, headers map[string]string) (*http.Response, error) {
 }
 
 func getTVPathList() ([]*TheTV, error) {
-	res, err := fetchUrl(fmt.Sprintf("%s/tv", consts.THETV_URL), nil)
+	res, err := fetchUrl(consts.THETV_URL, nil)
 	if err != nil {
 		return nil, err
 	}
@@ -66,33 +69,15 @@ func getTVPathList() ([]*TheTV, error) {
 		return nil, err
 	}
 	var tvPathList []*TheTV
-	doc.Find(".list-group.list-group-numbered a").Each(func(i int, s *goquery.Selection) {
+	doc.Find("#fallbackContent a").Each(func(i int, s *goquery.Selection) {
 		link, _ := s.Attr("href")
+		name := strings.TrimSpace(s.Text())
 		tvPathList = append(tvPathList, &TheTV{
-			Name: s.Text(),
-			Path: link,
+			Name: name,
+			Path: strings.Replace(link, consts.THETV_URL, "", 1),
 		})
 	})
 	return tvPathList, nil
-}
-
-func getTVId(tv *TheTV) (string, error) {
-	url := consts.THETV_URL + tv.Path
-	res, err := fetchUrl(url, nil)
-	if err != nil {
-		return "", err
-	}
-	defer res.Body.Close()
-	bodyBytes, err := io.ReadAll(res.Body)
-	if err != nil {
-		return "", err
-	}
-	reg := regexp.MustCompile(`jsonUrl = \"https://thetvapp.to/json/(\d+)\.json\";`)
-	matches := reg.FindStringSubmatch(string(bodyBytes))
-	if len(matches) < 2 {
-		return "", fmt.Errorf("failed to extract TV ID from page")
-	}
-	return matches[1], nil
 }
 
 func getTVList() ([]*TheTV, error) {
@@ -112,17 +97,18 @@ func getTVList() ([]*TheTV, error) {
 		wg.Add(1)
 		go func(tv *TheTV) {
 			defer wg.Done()
-			tvID, err := getTVId(tv)
+			path := strings.ReplaceAll(tv.Path, "/channel/", "")
+			streamName, err := getTVStreamName(tv)
 			if err != nil {
-				atomic.AddInt32(&errCount, 1)
-				fmt.Printf("Warning: failed to fetch TV ID for %s: %v\n", tv.Name, err)
-				return
+				fmt.Println("Error fetching stream name for", tv.Name, err)
+				errCount++
 			}
 			mu.Lock()
 			tvList = append(tvList, &TheTV{
-				Name: tv.Name,
-				Path: tv.Path,
-				ID:   tvID,
+				Name:       tv.Name,
+				StreamName: streamName,
+				Path:       tv.Path,
+				ID:         path,
 			})
 			mu.Unlock()
 		}(tv)
@@ -137,9 +123,10 @@ func getTVList() ([]*TheTV, error) {
 }
 
 func GetTVSchedule(id, path string) ([]*TVSchedule, error) {
-	url := fmt.Sprintf("%s/json/%s.json", consts.THETV_URL, id)
+	tvName := strings.ReplaceAll(path, "/channel/", "")
+	url := fmt.Sprintf("%s/tv_schedules/%s.json", consts.THETV_URL, tvName)
 	res, err := fetchUrl(url, map[string]string{
-		"Referer": fmt.Sprintf("%s/%s", consts.THETV_URL, path),
+		"Referer": fmt.Sprintf("%s%s", consts.THETV_URL, path),
 	})
 	if err != nil {
 		return nil, err
@@ -152,7 +139,7 @@ func GetTVSchedule(id, path string) ([]*TVSchedule, error) {
 	}
 	return tvSchedule, nil
 }
-func saveTVListToYaml() error {
+func SaveTVListToYaml() error {
 	tvList, err := getTVList()
 	if err != nil {
 		return err
@@ -174,4 +161,23 @@ func saveTVListToYaml() error {
 	}
 	fmt.Println("TV list saved successfully: tvList.yaml")
 	return nil
+}
+
+func getTVStreamName(tv *TheTV) (string, error) {
+	url := consts.THETV_URL + tv.Path
+	res, err := fetchUrl(url, nil)
+	if err != nil {
+		return "", err
+	}
+	defer res.Body.Close()
+	bodyBytes, err := io.ReadAll(res.Body)
+	if err != nil {
+		return "", err
+	}
+	reg := regexp.MustCompile(`id="stream_name" name="(.*?)"`)
+	matches := reg.FindStringSubmatch(string(bodyBytes))
+	if len(matches) < 2 {
+		return "", fmt.Errorf("failed to extract stream_name from page")
+	}
+	return matches[1], nil
 }
