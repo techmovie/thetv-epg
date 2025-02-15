@@ -1,354 +1,887 @@
-- name: WNBC (New York) NBC East
-  path: /tv/wnbc-new-york-nbc-east-live-stream/
-  id: "9200016000"
-- name: CNBC
-  path: /tv/cnbc-live-stream/
-  id: "9200009145"
-- name: WE tv
-  path: /tv/we-tv-live-stream/
-  id: "9233003770"
-- name: BET Her
-  path: /tv/bet-her-live-stream/
-  id: "9200020665"
-- name: Destination America
-  path: /tv/destination-america-live-stream/
-  id: "9200014472"
+- name: Nick Jr - East
+  streamName: NickJrEast
+  path: /channel/nick-jr-east
+  id: nick-jr-east
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/nick-jr-us.png?raw=true
+- name: Fanduel Sports Network Oklahoma
+  streamName: fanduel-sports-network-oklahoma
+  path: /channel/fanduel-sports-network-oklahoma
+  id: fanduel-sports-network-oklahoma
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fanduel-tv-us.png?raw=true
+- name: FX Networks East Coast
+  streamName: FXEast
+  path: /channel/fx-networks-east-coast
+  id: fx-networks-east-coast
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fx-us.png?raw=true
+- name: TSN5
+  streamName: tsn5
+  path: /channel/tsn5
+  id: tsn5
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/TSN5.svg/1200px-TSN5.svg.png
+- name: Showtime - Eastern Feed
+  streamName: ShowtimeEast
+  path: /channel/paramount-with-showtime-eastern-feed
+  id: paramount-with-showtime-eastern-feed
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/showtime-us.png?raw=true
+- name: TSN3
+  streamName: tsn3
+  path: /channel/tsn3
+  id: tsn3
+  logo: https://cdn.tvpassport.com/image/station/240x135/v2/s90119_h15_aa.png
+- name: MovieMax (Max 6) - East
+  streamName: MovieMaxEast
+  path: /channel/moviemax-max-6-east
+  id: moviemax-max-6-east
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cinemax-moviemax-us.png?raw=true
+- name: ABC (WABC) New York, NY
+  streamName: WABCDT1
+  path: /channel/abc-wabc-new-york-ny
+  id: abc-wabc-new-york-ny
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/abc-us.png?raw=true
+- name: TSN2
+  streamName: tsn2
+  path: /channel/tsn2
+  id: tsn2
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/TSN2_New_Logo.svg/2560px-TSN2_New_Logo.svg.png
+- name: FUSE TV - Eastern feed
+  streamName: FuseEast
+  path: /channel/fuse-tv-eastern-feed
+  id: fuse-tv-eastern-feed
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fuse-us.png?raw=true
+- name: Yes Network
+  streamName: yes-network
+  path: /channel/yes-network
+  id: yes-network
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/yes-network-us.png?raw=true
+- name: Fanduel Sports Network San Diego
+  streamName: fanduel-sports-network-san-diego
+  path: /channel/fanduel-sports-network-san-diego
+  id: fanduel-sports-network-san-diego
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fanduel-tv-us.png?raw=true
+- name: Fanduel Sports Southeast Tennessee Nashville
+  streamName: fanduel-sports-southeast-tennessee-nashville
+  path: /channel/fanduel-sports-southeast-tennessee-nashville
+  id: fanduel-sports-southeast-tennessee-nashville
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fanduel-tv-us.png?raw=true
+- name: CBS (WCBS) New York, NY
+  streamName: WCBSDT1
+  path: /channel/cbs-wcbs-new-york-ny
+  id: cbs-wcbs-new-york-ny
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cbs-news-us.png?raw=true
+- name: Fanduel Sports Network Socal
+  streamName: fanduel-sports-network-socal
+  path: /channel/fanduel-sports-network-socal
+  id: fanduel-sports-network-socal
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fanduel-tv-us.png?raw=true
+- name: BBC America - East
+  streamName: BBCAmericaEast
+  path: /channel/bbc-america-east
+  id: bbc-america-east
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/bbc-america-us.png?raw=true
+- name: NHL Network USA
+  streamName: NHLNetwork
+  path: /channel/nhl-network-usa
+  id: nhl-network-usa
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/nhl-network-us.png?raw=true
+- name: FOX (KTTV) Los Angeles
+  streamName: fox-kttv-los-angeles-ca
+  path: /channel/fox-kttv-los-angeles-ca
+  id: fox-kttv-los-angeles-ca
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Fts-los-angeles-a.svg/2880px-Fts-los-angeles-a.svg.png
+- name: NBC (KNBC) Los Angeles
+  streamName: nbc-knbc-los-angeles-ca
+  path: /channel/nbc-knbc-los-angeles-ca
+  id: nbc-knbc-los-angeles-ca
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/nbc-us.png?raw=true
+- name: NBC Sports Bay Area
+  streamName: nbc-sports-bay-area
+  path: /channel/nbc-sports-bay-area
+  id: nbc-sports-bay-area
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/nbc-sports-us.png?raw=true
+- name: TSN4
+  streamName: tsn4
+  path: /channel/tsn4
+  id: tsn4
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/TSN4.svg/1280px-TSN4.svg.png
+- name: Disney - Eastern Feed
+  streamName: DisneyChannelEast
+  path: /channel/disney-eastern-feed
+  id: disney-eastern-feed
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/disney-channel-us.png?raw=true
+- name: CBS Sports Network USA
+  streamName: CBSSportsNetworkUSA
+  path: /channel/cbs-sports-network-usa
+  id: cbs-sports-network-usa
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cbs-sports-network-us.png?raw=true
+- name: WPIX New York (SUPERSTATION)
+  streamName: WPIX
+  path: /channel/wpix-new-york-superstation
+  id: wpix-new-york-superstation
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/PIX11_2017.svg/640px-PIX11_2017.svg.png
+- name: HBO - Eastern Feed
+  streamName: HBOEast
+  path: /channel/hbo-eastern-feed
+  id: hbo-eastern-feed
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/hbo-us.png?raw=true
+- name: Disney Junior USA - East
+  streamName: DisneyJuniorEast
+  path: /channel/disney-junior-usa-east
+  id: disney-junior-usa-east
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/disney-jr-us.png?raw=true
+- name: History Channel US - Eastern Feed
+  streamName: HistoryEast
+  path: /channel/history-channel-us-eastern-feed
+  id: history-channel-us-eastern-feed
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/history-channel-us.png?raw=true
+- name: Fox News
+  streamName: FoxNewsChannel
+  path: /channel/fox-news
+  id: fox-news
+  logo: https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/fox-news-us.png
+- name: NBC Sports Boston
+  streamName: nbc-sports-boston
+  path: /channel/nbc-sports-boston
+  id: nbc-sports-boston
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/nbc-sports-us.png?raw=true
+- name: NBA TV USA
+  streamName: NBATV
+  path: /channel/nba-tv-usa
+  id: nba-tv-usa
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/nba-tv-us.png?raw=true
 - name: ESPN
-  path: /tv/espn-live-stream/
-  id: "9233007996"
-- name: WABC (New York) ABC East
-  path: /tv/wabc-new-york-abc-east-live-stream/
-  id: "9200000057"
-- name: The Movie Channel East
-  path: /tv/the-movie-channel-east-live-stream/
-  id: "9233013260"
-- name: ESPNews
-  path: /tv/espnews-live-stream/
-  id: "9200006523"
-- name: Tennis Channel
-  path: /tv/tennis-channel-live-stream/
-  id: "9200004566"
-- name: CNN
-  path: /tv/cnn-live-stream/
-  id: "9233008130"
-- name: WCBS (New York) CBS East
-  path: /tv/wcbs-new-york-cbs-east-live-stream/
-  id: "9233011201"
-- name: CSPAN
-  path: /tv/cspan-live-stream/
-  id: "9233000277"
-- name: The CW (WPIX New York)
-  path: /tv/the-cw-live-stream/
-  id: "9200002881"
-- name: CSPAN 2
-  path: /tv/cspan-2-live-stream/
-  id: "9233013638"
-- name: ESPN2
-  path: /tv/espn2-live-stream/
-  id: "9200016131"
-- name: Comedy Central
-  path: /tv/comedy-central-live-stream/
-  id: "9233009509"
-- name: Crime & Investigation HD
-  path: /tv/crime-investigation-hd-live-stream/
-  id: "9200009215"
-- name: BBC World News HD
-  path: /tv/bbc-world-news-hd-live-stream/
-  id: "9233000381"
-- name: BET
-  path: /tv/bet-live-stream/
-  id: "9233005931"
-- name: American Heroes Channel
-  path: /tv/american-heroes-channel-live-stream/
-  id: "9233015768"
-- name: ESPNU
-  path: /tv/espnu-live-stream/
-  id: "9233009496"
-- name: Lifetime
-  path: /tv/lifetime-live-stream/
-  id: "9200000502"
-- name: Food Network
-  path: /tv/food-network-live-stream/
-  id: "9233005598"
-- name: AMC
-  path: /tv/amc-live-stream/
-  id: "9200020107"
-- name: A&E
-  path: /tv/ae-live-stream/
-  id: "9200009045"
-- name: Cartoon Network
-  path: /tv/cartoon-network-live-stream/
-  id: "9233001926"
-- name: WNYW (New York) FOX East
-  path: /tv/wnyw-new-york-fox-east-live-stream/
-  id: "9233003497"
-- name: Boomerang
-  path: /tv/boomerang-live-stream/
-  id: "9233008951"
-- name: Bloomberg TV
-  path: /tv/bloomberg-tv-live-stream/
-  id: "9233015798"
-- name: ACC Network
-  path: /tv/acc-network-live-stream/
-  id: "9233011061"
-- name: Bravo
-  path: /tv/bravo-live-stream/
-  id: "9200020094"
-- name: FOX News Channel
-  path: /tv/fox-news-channel-live-stream/
-  id: "9233006969"
-- name: Freeform
-  path: /tv/freeform-live-stream/
-  id: "9200000497"
-- name: Animal Planet
-  path: /tv/animal-planet-live-stream/
-  id: "9233013462"
-- name: Investigation Discovery
-  path: /tv/investigation-discovery-live-stream/
-  id: "9200006654"
-- name: Golf Channel
-  path: /tv/golf-channel-live-stream/
-  id: "9200011865"
-- name: MotorTrend HD
-  path: /tv/motortrend-hd-live-stream/
-  id: "9233003479"
-- name: Univision East
-  path: /tv/univision-east-live-stream/
-  id: "9200000682"
-- name: BBC America
-  path: /tv/bbc-america-live-stream/
-  id: "9200014701"
-- name: FX Movie
-  path: /tv/fx-movie-live-stream/
-  id: "9200001026"
-- name: MoreMAX
-  path: /tv/moremax-live-stream/
-  id: "9200006529"
-- name: MTV
-  path: /tv/mtv-live-stream/
-  id: "9233015501"
-- name: Telemundo East
-  path: /tv/telemundo-east-live-stream/
-  id: "9266072146"
-- name: E!
-  path: /tv/e-live-stream/
-  id: "9233003794"
-- name: Hallmark Movies & Mysteries HD
-  path: /tv/hallmark-movies-mysteries-hd-live-stream/
-  id: "9200020115"
-- name: Disney Junior
-  path: /tv/disney-junior-live-stream/
-  id: "9200016560"
-- name: HLN
-  path: /tv/hln-live-stream/
-  id: "9233005762"
-- name: TV One HD
-  path: /tv/tv-one-hd-live-stream/
-  id: "9200000547"
-- name: History
-  path: /tv/history-live-stream/
-  id: "9200014439"
-- name: Hallmark Drama HD
-  path: /tv/hallmark-drama-hd-live-stream/
-  id: "9233012938"
-- name: CMT
-  path: /tv/cmt-live-stream/
-  id: "9233000169"
-- name: ION Television East HD
-  path: /tv/ion-television-east-hd-live-stream/
-  id: "9200014588"
-- name: SundanceTV HD
-  path: /tv/sundancetv-hd-live-stream/
-  id: "9200018375"
-- name: NFL Red Zone
-  path: /tv/nfl-red-zone/
-  id: "703"
-- name: Discovery Life
-  path: /tv/discovery-life-live-stream/
-  id: "9200007461"
-- name: Newsmax TV
-  path: /tv/newsmax-tv/
-  id: "9200020810"
-- name: SHOWTIME 2
-  path: /tv/showtime-2-live-stream/
-  id: "9200014450"
-- name: FOX Sports 1
-  path: /tv/fox-sports-1-live-stream/
-  id: "9233000539"
-- name: LMN
-  path: /tv/lmn-live-stream/
-  id: "9233009429"
-- name: HGTV
-  path: /tv/hgtv-live-stream/
-  id: "9200004467"
-- name: IFC
-  path: /tv/ifc-live-stream/
-  id: "9233006961"
-- name: FXX
-  path: /tv/fxx-live-stream/
-  id: "9200014910"
-- name: HBO 2 East
-  path: /tv/hbo-2-east-live-stream/
-  id: "9233013492"
-- name: SEC Network
-  path: /tv/sec-network-live-stream/
-  id: "9233002484"
-- name: Cooking Channel
-  path: /tv/cooking-channel-live-stream/
-  id: "9233015616"
-- name: MSNBC
-  path: /tv/msnbc-live-stream/
-  id: "9200009294"
-- name: Outdoor Channel
-  path: /tv/outdoor-channel-live-stream/
-  id: "9200006358"
-- name: Hallmark
-  path: /tv/hallmark-live-stream/
-  id: "9233015586"
-- name: FYI
-  path: /tv/fyi-live-stream/
-  id: "9233000161"
-- name: OWN
-  path: /tv/own-live-stream/
-  id: "9200004740"
-- name: NBA TV
-  path: /tv/nba-tv-live-stream/
-  id: "9233005688"
-- name: PBS 13 (WNET) New York
-  path: /tv/pbs-13-wnet-new-york-live-stream/
-  id: "9200000048"
-- name: NHL Network
-  path: /tv/nhl-network-live-stream/
-  id: "9200016261"
-- name: STARZ East
-  path: /tv/starz-east-live-stream/
-  id: "9233005475"
-- name: Discovery Family Channel
-  path: /tv/discovery-family-channel-live-stream/
-  id: "9233015612"
-- name: Showtime (E)
-  path: /tv/showtime-e-live-stream/
-  id: "9233011188"
-- name: HBO East
-  path: /tv/hbo-east-live-stream/
-  id: "9200008780"
-- name: Science
-  path: /tv/science-live-stream/
-  id: "9200000462"
-- name: TBS
-  path: /tv/tbs-live-stream/
-  id: "9233011348"
-- name: NFL Network
-  path: /tv/nfl-network-live-stream/
-  id: "9233000078"
-- name: Nick Jr.
-  path: /tv/nick-jr-live-stream/
-  id: "9233007153"
-- name: FX
-  path: /tv/fx-live-stream/
-  id: "9233006959"
-- name: FOX Sports 2
-  path: /tv/fox-sports-2-live-stream/
-  id: "9233012008"
-- name: MeTV Toons
-  path: /tv/metv-toons-live-stream/
-  id: "9233000733"
-- name: Discovery
-  path: /tv/discovery-live-stream/
-  id: "9233001914"
-- name: SYFY
-  path: /tv/syfy-live-stream/
-  id: "9200002505"
-- name: VH1
-  path: /tv/vh1-live-stream/
-  id: "9233011530"
+  streamName: ESPN
+  path: /channel/espn
+  id: espn
+  logo: http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s10179_dark_360w_270h.png
+- name: Hallmark - Eastern Feed
+  streamName: HallmarkChannelEast
+  path: /channel/hallmark-eastern-feed
+  id: hallmark-eastern-feed
+  logo: https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s11221_dark_360w_270h.png
+- name: Motor Trend HD
+  streamName: Motortrend
+  path: /channel/motor-trend-hd
+  id: motor-trend-hd
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/motor-trend-us.png?raw=true
+- name: Golf Channel USA
+  streamName: GolfChannel
+  path: /channel/golf-channel-usa
+  id: golf-channel-usa
+  logo: http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s14899_dark_360w_270h.png
+- name: HBO Family - Eastern Feed
+  streamName: HBOFamilyEast
+  path: /channel/hbo-family-eastern-feed
+  id: hbo-family-eastern-feed
+  logo: http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s16585_dark_360w_270h.png
+- name: WE (Women's Entertainment) - Eastern
+  streamName: WeTVEast
+  path: /channel/we-womens-entertainment-eastern
+  id: we-womens-entertainment-eastern
+  logo: https://cdn.tvpassport.com/image/station/240x135/v2/s16409_h15_ab.png
+- name: CMT US - Eastern Feed
+  streamName: CMTEast
+  path: /channel/cmt-us-eastern-feed
+  id: cmt-us-eastern-feed
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cmt-us.png?raw=true
+- name: Sportsnet Pittsburgh
+  streamName: sportsnet-pittsburgh
+  path: /channel/sportsnet-pittsburgh
+  id: sportsnet-pittsburgh
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/sportsnet-pittsburgh-us.png?raw=true
+- name: A&E US - Eastern Feed
+  streamName: AEEast
+  path: /channel/ae-us-eastern-feed
+  id: ae-us-eastern-feed
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/A%26E_Network_logo.svg/640px-A%26E_Network_logo.svg.png
+- name: Turner Classic Movies USA
+  streamName: TCMEast
+  path: /channel/turner-classic-movies-usa
+  id: turner-classic-movies-usa
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/tcm-us.png?raw=true
+- name: TNT - Eastern Feed
+  streamName: TNTEast
+  path: /channel/tnt-eastern-feed
+  id: tnt-eastern-feed
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/tnt-us.png?raw=true
+- name: Hallmark Family HD
+  streamName: HallmarkDrama
+  path: /channel/hallmark-family-hd
+  id: hallmark-family-hd
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/hallmark-family-us.png?raw=true
+- name: ESPN U
+  streamName: ESPNU
+  path: /channel/espn-u
+  id: espn-u
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/espn-u-us.png?raw=true
+- name: FOX (WNYW) New York, NY
+  streamName: WNYWDT1
+  path: /channel/fox-wnyw-new-york-ny
+  id: fox-wnyw-new-york-ny
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fox-us.png?raw=true
+- name: Crime & Investigation Network USA HD
+  streamName: CrimePlusInvestigation
+  path: /channel/crime-investigation-network-usa-hd
+  id: crime-investigation-network-usa-hd
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/crime-and-investigation-us.png?raw=true
 - name: MLB Network
-  path: /tv/mlb-network-live-stream/
-  id: "9200002579"
-- name: HBO Comedy HD
-  path: /tv/hbo-comedy-hd-live-stream/
-  id: "9233003785"
-- name: Disney XD
-  path: /tv/disney-xd-live-stream/
-  id: "9233008150"
-- name: MovieMAX
-  path: /tv/moviemax-live-stream/
-  id: "9233015922"
-- name: TeenNick
-  path: /tv/teennick-live-stream/
-  id: "9266072256"
-- name: Travel Channel
-  path: /tv/travel-channel-live-stream/
-  id: "9233008142"
-- name: HBO Zone HD
-  path: /tv/hbo-zone-hd-live-stream/
-  id: "9233009491"
-- name: The Weather Channel
-  path: /tv/the-weather-channel-live-stream/
-  id: "9200016258"
+  streamName: MLBNetwork
+  path: /channel/mlb-network
+  id: mlb-network
+  logo: http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s62081_dark_360w_270h.png
+- name: Discovery Life Channel
+  streamName: DiscoveryLife
+  path: /channel/discovery-life-channel
+  id: discovery-life-channel
+  logo: https://static.wikia.nocookie.net/logopedia/images/3/3a/Discovery_Life_Channel_logo_official_png.png/revision/latest?cb=20150131181202
+- name: Disney XD USA - Eastern Feed
+  streamName: DisneyXDEast
+  path: /channel/disney-xd-usa-eastern-feed
+  id: disney-xd-usa-eastern-feed
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/disney-xd-us.png?raw=true
+- name: Starz - Eastern
+  streamName: StarzEast
+  path: /channel/starz-eastern
+  id: starz-eastern
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/starz-us.png?raw=true
+- name: Fanduel Sports Network South Carolinas
+  streamName: fanduel-sports-network-south-carolinas
+  path: /channel/fanduel-sports-network-south-carolinas
+  id: fanduel-sports-network-south-carolinas
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fanduel-tv-us.png?raw=true
+- name: Showtime 2 - Eastern
+  streamName: Showtime2East
+  path: /channel/showtime-2-eastern
+  id: showtime-2-eastern
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/showtime-2-us.png?raw=true
+- name: HBO Comedy HD - East
+  streamName: HBOComedyEast
+  path: /channel/hbo-comedy-hd-east
+  id: hbo-comedy-hd-east
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/hbo-comedy-us.png?raw=true
+- name: HBO Zone HD - East
+  streamName: HBOZoneEast
+  path: /channel/hbo-zone-hd-east
+  id: hbo-zone-hd-east
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/hbo-zone-us.png?raw=true
+- name: TSN1
+  streamName: tsn1
+  path: /channel/tsn1
+  id: tsn1
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/TSN1.svg/2560px-TSN1.svg.png
+- name: HBO Signature (HBO 3) - Eastern
+  streamName: HBOSignatureEast
+  path: /channel/hbo-signature-hbo-3-eastern
+  id: hbo-signature-hbo-3-eastern
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/hbo-signature-us.png?raw=true
+- name: Spectrum Sportsnet Lakers
+  streamName: spectrum-sportsnet
+  path: /channel/spectrum-sportsnet
+  id: spectrum-sportsnet
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/spectrum-sportsnet-la-us.png?raw=true
+- name: Fanduel Sports Network Ohio Cleveland
+  streamName: fanduel-sports-network-ohio-cleveland
+  path: /channel/fanduel-sports-network-ohio-cleveland
+  id: fanduel-sports-network-ohio-cleveland
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fanduel-tv-us.png?raw=true
+- name: Syfy - Eastern Feed
+  streamName: SyfyEast
+  path: /channel/syfy-eastern-feed
+  id: syfy-eastern-feed
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/syfy-us.png?raw=true
+- name: Game Show Network East
+  streamName: game-show-network-east
+  path: /channel/game-show-network-east
+  id: game-show-network-east
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/game-show-network-us.png?raw=true
+- name: Comedy Central (US) - Eastern Feed
+  streamName: ComedyCentralEast
+  path: /channel/comedy-central-us-eastern-feed
+  id: comedy-central-us-eastern-feed
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/comedy-central-us.png?raw=true
+- name: NFL RedZone
+  streamName: NFLRedZone
+  path: /channel/nfl-redzone
+  id: nfl-redzone
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/nfl-red-zone-us.png?raw=true
+- name: Marquee Sports Network
+  streamName: marquee-sports-network
+  path: /channel/marquee-sports-network
+  id: marquee-sports-network
+  logo: https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/marquee-sports-network-us.png
+- name: NBC Sports Philadelphia
+  streamName: nbc-sports-philadelphia
+  path: /channel/nbc-sports-philadelphia
+  id: nbc-sports-philadelphia
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/nbcsn-philadelphia-us.png?raw=true
+- name: Freeform - East Feed
+  streamName: FreeformEast
+  path: /channel/freeform-east-feed
+  id: freeform-east-feed
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/freeform-us.png?raw=true
+- name: HGTV USA - Eastern Feed
+  streamName: HGTVEast
+  path: /channel/hgtv-usa-eastern-feed
+  id: hgtv-usa-eastern-feed
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/hgtv-us.png?raw=true
+- name: BBC News - North America HD
+  streamName: BBCWorldNewsNorthAmerica
+  path: /channel/bbc-news-north-america-hd
+  id: bbc-news-north-america-hd
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-kingdom/bbc-news-uk.png?raw=true
 - name: Big Ten Network
-  path: /tv/big-ten-network-live-stream/
-  id: "9233015438"
-- name: Nicktoons
-  path: /tv/nicktoons-live-stream/
-  id: "9233013985"
-- name: Cinemax
-  path: /tv/cinemax-live-stream/
-  id: "9200000143"
-- name: Oxygen True Crime
-  path: /tv/oxygen-true-crime-live-stream/
-  id: "9200012145"
-- name: Logo
-  path: /tv/logo-live-stream/
-  id: "9233008445"
-- name: TLC
-  path: /tv/tlc-live-stream/
-  id: "9200016249"
-- name: Nat Geo WILD
-  path: /tv/nat-geo-wild-live-stream/
-  id: "9233002054"
-- name: USA Network
-  path: /tv/usa-network-live-stream/
-  id: "9200009133"
-- name: CBS Sports Network
-  path: /tv/cbs-sports-network-live-stream/
-  id: "9233015468"
-- name: Fox Business Network
-  path: /tv/fox-business-network-live-stream/
-  id: "9200011877"
-- name: TCM
-  path: /tv/tcm-live-stream/
-  id: "9233003866"
-- name: HBO Signature
-  path: /tv/hbo-signature-live-stream/
-  id: "9200002532"
-- name: Nickelodeon East
-  path: /tv/nickelodeon-east-live-stream/
-  id: "9233011497"
-- name: Disney Channel (East)
-  path: /tv/disney-channel-east-live-stream/
-  id: "9200011893"
+  streamName: BTN
+  path: /channel/big-ten-network
+  id: big-ten-network
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/big-ten-network-us.png?raw=true
+- name: Animal Planet US - East
+  streamName: AnimalPlanetEast
+  path: /channel/animal-planet-us-east
+  id: animal-planet-us-east
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/animal-planet-us.png?raw=true
+- name: Monumental Sports Network
+  streamName: monumental-sports-network
+  path: /channel/monumental-sports-network
+  id: monumental-sports-network
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/monumental-sports-network-us.png?raw=true
+- name: Fanduel Sports Sun
+  streamName: fanduel-sports-sun
+  path: /channel/fanduel-sports-sun
+  pathAlias: bally-sports-sun
+  id: fanduel-sports-sun
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fanduel-tv-us.png?raw=true
+- name: Hallmark Mystery Eastern - HD
+  streamName: HallmarkMoviesMysteriesEast
+  path: /channel/hallmark-mystery-eastern-hd
+  id: hallmark-mystery-eastern-hd
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/hallmark-mystery-us.png?raw=true
 - name: Universal Kids
-  path: /tv/universal-kids-live-stream/
-  id: "9233009640"
-- name: ReelzChannel
-  path: /tv/reelzchannel-live-stream/
-  id: "9233015619"
-- name: HBO Family East
-  path: /tv/hbo-family-east-live-stream/
-  id: "9233000175"
-- name: National Geographic
-  path: /tv/national-geographic-live-stream/
-  id: "9233009337"
-- name: TNT
-  path: /tv/tnt-live-stream/
-  id: "9200008879"
-- name: truTV
-  path: /tv/trutv-live-stream/
-  id: "9233015561"
+  streamName: UniversalKidsEast
+  path: /channel/universal-kids
+  id: universal-kids
+  logo: http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s47540_dark_360w_270h.png
+- name: USA Network - East Feed
+  streamName: USANetworkEast
+  path: /channel/usa-network-east-feed
+  id: usa-network-east-feed
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/usa-us.png?raw=true
+- name: truTV USA - Eastern
+  streamName: truTVEast
+  path: /channel/trutv-usa-eastern
+  id: trutv-usa-eastern
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/tru-tv-us.png?raw=true
+- name: Independent Film Channel US
+  streamName: IFCEast
+  path: /channel/independent-film-channel-us
+  id: independent-film-channel-us
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/ifc-us.png?raw=true
+- name: Spectrum SportsNet LA
+  streamName: spectrum-sportsnet-la
+  path: /channel/spectrum-sportsnet-la
+  id: spectrum-sportsnet-la
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/spectrum-sportsnet-us.png?raw=true
+- name: ABC (KABC) Los Angeles
+  streamName: abc-kabc-los-angeles-ca
+  path: /channel/abc-kabc-los-angeles-ca
+  id: abc-kabc-los-angeles-ca
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/abc-us.png?raw=true
+- name: ESPN Deportes
+  streamName: espn-deportes
+  path: /channel/espn-deportes
+  id: espn-deportes
+  logo: https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/espn-deportes-us.png
+- name: E! Entertainment USA - Eastern Feed
+  streamName: EEast
+  path: /channel/e-entertainment-usa-eastern-feed
+  id: e-entertainment-usa-eastern-feed
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/e-entertainment-us.png?raw=true
+- name: MSG Plus
+  streamName: msg-plus
+  path: /channel/msg-plus
+  id: msg-plus
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/msg-us.png?raw=true
+- name: Bloomberg TV USA
+  streamName: BloombergTV
+  path: /channel/bloomberg-tv-usa
+  id: bloomberg-tv-usa
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/bloomberg-television-us.png?raw=true
+- name: FXX USA - Eastern
+  streamName: FXXEast
+  path: /channel/fxx-usa-eastern
+  id: fxx-usa-eastern
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fxx-us.png?raw=true
+- name: Sportsnet (East)
+  streamName: sportsnet-east
+  path: /channel/sportsnet-east
+  id: sportsnet-east
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/spectrum-sportsnet-us.png?raw=true
+- name: Univision - Eastern Feed
+  streamName: UnivisionEast
+  path: /channel/univision-eastern-feed
+  id: univision-eastern-feed
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/univision-us.png?raw=true
+- name: Midatlantic Sports Network
+  streamName: midatlantic-sports-network
+  path: /channel/midatlantic-sports-network
+  id: midatlantic-sports-network
+  logo: https://upload.wikimedia.org/wikipedia/en/e/e5/MASN-Logo.png
+- name: Travel US - East
+  streamName: TravelChannelEast
+  path: /channel/travel-us-east
+  id: travel-us-east
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/travel-channel-us.png?raw=true
+- name: Fanduel Sports Tennessee East
+  streamName: fanduel-sports-tennessee-east
+  path: /channel/fanduel-sports-tennessee-east
+  id: fanduel-sports-tennessee-east
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fanduel-tv-us.png?raw=true
+- name: Fox Sports 1
+  streamName: FoxSports1
+  path: /channel/fox-sports-1
+  id: fox-sports-1
+  logo: https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/fox-sports-1-us.png?raw=true
+- name: TV Land Eastern
+  streamName: tv-land-eastern
+  path: /channel/tv-land-eastern
+  id: tv-land-eastern
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/tv-land-us.png?raw=true
+- name: HLN
+  streamName: HLN
+  path: /channel/hln
+  id: hln
+  logo: http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s10145_dark_360w_270h.png
+- name: HBO 2 - Eastern Feed
+  streamName: HBO2East
+  path: /channel/hbo-2-eastern-feed
+  id: hbo-2-eastern-feed
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/hbo-2-us.png?raw=true
+- name: Sportsnet Pacific
+  streamName: sportsnet-pacific
+  path: /channel/sportsnet-pacific
+  id: sportsnet-pacific
+  logo: https://www.start.ca/wp-content/uploads/2022/09/StartTV_ChannelLogos_SportsnetPacific.png
+- name: CNN US
+  streamName: CNN
+  path: /channel/cnn-us
+  pathAlias: cnn
+  id: cnn-us
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cnn-us.png?raw=true
+- name: Fanduel Sports Southeast Georgia
+  streamName: fanduel-sports-southeast-georgia
+  path: /channel/fanduel-sports-southeast-georgia
+  id: fanduel-sports-southeast-georgia
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fanduel-tv-us.png?raw=true
+- name: Fanduel Sports Network South Tennessee
+  streamName: fanduel-sports-network-south-tennessee-usa
+  path: /channel/fanduel-sports-network-south-tennessee-usa
+  id: fanduel-sports-network-south-tennessee-usa
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fanduel-tv-us.png?raw=true
+- name: NBC (WNBC) New York, NY
+  streamName: WNBCDT1
+  path: /channel/nbc-wnbc-new-york-ny
+  id: nbc-wnbc-new-york-ny
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/nbc-us.png?raw=true
+- name: FX Movie Channel
+  streamName: FXMovieChannel
+  path: /channel/fx-movie-channel
+  id: fx-movie-channel
+  logo: https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/fxm-movie-channel-us.png
+- name: Fox Business
+  streamName: FoxBusiness
+  path: /channel/fox-business
+  id: fox-business
+  logo: https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/fox-business-us.png
+- name: TV One
+  streamName: TVOne
+  path: /channel/tv-one
+  id: tv-one
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/one-tv-us.png?raw=true
+- name: ACC Network
+  streamName: ACCNetwork
+  path: /channel/acc-network
+  id: acc-network
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/acc-network-us.png?raw=true
+- name: New England Sports Network
+  streamName: new-england-sports-network
+  path: /channel/new-england-sports-network
+  id: new-england-sports-network
+  logo: https://upload.wikimedia.org/wikipedia/en/0/02/NESN_logo_2019.png
+- name: ESPN2
+  streamName: ESPN2
+  path: /channel/espn2
+  id: espn2
+  logo: http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s12444_dark_360w_270h.png
+- name: NFL Network
+  streamName: NFLNetwork
+  path: /channel/nfl-network
+  id: nfl-network
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/nfl-network-us.png?raw=true
+- name: Nickelodeon USA - East Feed
+  streamName: NickelodeonEast
+  path: /channel/nickelodeon-usa-east-feed
+  id: nickelodeon-usa-east-feed
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/nickelodeon-us.png?raw=true
+- name: NBC Sports California
+  streamName: nbc-sports-california
+  path: /channel/nbc-sports-california
+  id: nbc-sports-california
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/nbc-sports-us.png?raw=true
+- name: TBS - East
+  streamName: TBSEast
+  path: /channel/tbs-east
+  id: tbs-east
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/tbs-us.png?raw=true
+- name: Fanduel Sports Network Detroit
+  streamName: fanduel-sports-network-detroit-hd
+  path: /channel/fanduel-sports-network-detroit-hd
+  id: fanduel-sports-network-detroit-hd
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fanduel-tv-us.png?raw=true
+- name: National Geographic US - Eastern
+  streamName: NationalGeographicEast
+  path: /channel/national-geographic-us-eastern
+  id: national-geographic-us-eastern
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/national-geographic-us.png?raw=true
+- name: FYI USA - Eastern
+  streamName: FYIEast
+  path: /channel/fyi-usa-eastern
+  id: fyi-usa-eastern
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fyi-us.png?raw=true
+- name: American Heroes Channel
+  streamName: AmericanHeroesChannel
+  path: /channel/american-heroes-channel
+  id: american-heroes-channel
+  logo: http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s18284_dark_360w_270h.png
+- name: LOGO - East
+  streamName: LogoEast
+  path: /channel/logo-east
+  id: logo-east
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/logo-us.png?raw=true
+- name: Sportsnet West
+  streamName: sportsnet-west
+  path: /channel/sportsnet-west
+  id: sportsnet-west
+  logo: https://static.wikia.nocookie.net/logopedia/images/9/95/Rogers_sportsnet_west.png/revision/latest?cb=20120212022740
+- name: Fanduel Sports Network Great Lakes
+  streamName: fanduel-sports-network-great-lakes
+  path: /channel/fanduel-sports-network-great-lakes
+  id: fanduel-sports-network-great-lakes
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fanduel-tv-us.png?raw=true
+- name: Discovery Family Channel
+  streamName: DiscoveryFamily
+  path: /channel/discovery-family-channel
+  id: discovery-family-channel
+  logo: http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s16618_dark_360w_270h.png
+- name: Fanduel Sports Network West
+  streamName: fanduel-sports-network-west
+  path: /channel/fanduel-sports-network-west
+  id: fanduel-sports-network-west
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fanduel-tv-us.png?raw=true
+- name: MSG Madison Square Gardens
+  streamName: msg-madison-square-gardens
+  path: /channel/msg-madison-square-gardens
+  id: msg-madison-square-gardens
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/msg-us.png?raw=true
+- name: Fanduel Sports Southeast South Carolina
+  streamName: fanduel-sports-southeast-south-carolina
+  path: /channel/fanduel-sports-southeast-south-carolina
+  id: fanduel-sports-southeast-south-carolina
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fanduel-tv-us.png?raw=true
+- name: Bravo USA - Eastern Feed
+  streamName: BravoEast
+  path: /channel/bravo-usa-eastern-feed
+  id: bravo-usa-eastern-feed
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/bravo-us.png?raw=true
+- name: ION - Eastern Feed
+  streamName: IONTVEast
+  path: /channel/ion-eastern-feed
+  id: ion-eastern-feed
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/vice-us.png?raw=true
+- name: Outdoor Channel US
+  streamName: OutdoorChannel
+  path: /channel/outdoor-channel-us
+  id: outdoor-channel-us
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/outdoor-channel-us.png?raw=true
+- name: TeenNick - Eastern
+  streamName: TeenNickEast
+  path: /channel/teennick-eastern
+  id: teennick-eastern
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/teen-nick-us.png?raw=true
+- name: Space City Home Network
+  streamName: space-city-home-network
+  path: /channel/space-city-home-network
+  id: space-city-home-network
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/space-city-home-network-us.png?raw=true
+- name: Nicktoons - East
+  streamName: NicktoonsEast
+  path: /channel/nicktoons-east
+  id: nicktoons-east
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/nick-toons-us.png?raw=true
+- name: Lifetime Movies - East
+  streamName: LifetimeMoviesEast
+  path: /channel/lifetime-movies-east
+  id: lifetime-movies-east
+  logo: http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s18480_dark_360w_270h.png
+- name: The Weather Channel
+  streamName: TheWeatherChannel
+  path: /channel/the-weather-channel
+  id: the-weather-channel
+  logo: http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s58812_dark_360w_270h.png
+- name: Boomerang
+  streamName: Boomerang
+  path: /channel/boomerang
+  id: boomerang
+  logo: http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s21883_dark_360w_270h.png
+- name: Investigation Discovery USA - Eastern
+  streamName: InvestigationDiscoveryEast
+  path: /channel/investigation-discovery-usa-eastern
+  id: investigation-discovery-usa-eastern
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/investigation-discovery-us.png?raw=true
+- name: ESPN News
+  streamName: ESPNews
+  path: /channel/espn-news
+  id: espn-news
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/espnews-us.png?raw=true
+- name: Oxygen - Eastern Feed
+  streamName: OxygenEast
+  path: /channel/oxygen-eastern-feed
+  id: oxygen-eastern-feed
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/oxygen-us.png?raw=true
+- name: Destination America
+  streamName: DestinationAmerica
+  path: /channel/destination-america
+  id: destination-america
+  logo: http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s16617_dark_360w_270h.png
+- name: Fanduel Sports Network Wisconsin
+  streamName: fanduel-sports-network-wisconsin
+  path: /channel/fanduel-sports-network-wisconsin
+  id: fanduel-sports-network-wisconsin
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fanduel-tv-us.png?raw=true
+- name: TMC (US) - Eastern Feed
+  streamName: TheMovieChannelEast
+  path: /channel/tmc-us-eastern-feed
+  id: tmc-us-eastern-feed
+  logo: https://upload.wikimedia.org/wikipedia/en/thumb/5/54/TMC_logo.svg/1200px-TMC_logo.svg.png
+- name: SEC Network
+  streamName: SECN
+  path: /channel/sec-network
+  id: sec-network
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/sec-network-us.png?raw=true
+- name: Fanduel Sports Indiana
+  streamName: fanduel-sports-indiana
+  path: /channel/fanduel-sports-indiana
+  id: fanduel-sports-indiana
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fanduel-tv-us.png?raw=true
+- name: Cartoon Network USA - Eastern Feed
+  streamName: CartoonNetworkEast
+  path: /channel/cartoon-network-usa-eastern-feed
+  id: cartoon-network-usa-eastern-feed
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cartoon-network-us.png?raw=true
 - name: VICE
-  path: /tv/vice-live-stream/
-  id: "9200000630"
-- name: Fuse HD
-  path: /tv/fuse-hd-live-stream/
-  id: "9233011488"
+  streamName: VICETV
+  path: /channel/vice
+  id: vice
+  logo: http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s18822_dark_360w_270h.png
+- name: C-SPAN
+  streamName: CSPAN
+  path: /channel/cspan
+  id: cspan
+  logo: http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s10161_dark_360w_270h.png
+- name: Sportsnet One
+  streamName: sportsnet-one
+  path: /channel/sportsnet-one
+  id: sportsnet-one
+  logo: https://cdn.tvpassport.com/image/station/240x135/v2/s68859_h15_ac.png
+- name: MTV USA - Eastern Feed
+  streamName: MTVEast
+  path: /channel/mtv-usa-eastern-feed
+  id: mtv-usa-eastern-feed
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/mtv-us.png?raw=true
+- name: MeTV Toons (WJLP2) New Jersey
+  streamName: metv-toons
+  path: /channel/metv-toons-wjlp2-new-jersey
+  id: metv-toons-wjlp2-new-jersey
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/me-tv-us.png?raw=true
+- name: Science
+  streamName: Science
+  path: /channel/science
+  id: science
+  logo: http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s16616_dark_360w_270h.png
+- name: Lifetime Network US - Eastern Feed
+  streamName: LifetimeEast
+  path: /channel/lifetime-network-us-eastern-feed
+  id: lifetime-network-us-eastern-feed
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Logo_Lifetime_2020.svg/2560px-Logo_Lifetime_2020.svg.png
+- name: AMC - Eastern Feed
+  streamName: AMCEast
+  path: /channel/amc-eastern-feed
+  id: amc-eastern-feed
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/amc-us.png?raw=true
+- name: CNBC USA
+  streamName: CNBC
+  path: /channel/cnbc-usa
+  id: cnbc-usa
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cnbc-us.png?raw=true
+- name: TLC USA - Eastern
+  streamName: TLCEast
+  path: /channel/tlc-usa-eastern
+  id: tlc-usa-eastern
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/tlc-us.png?raw=true
+- name: Telemundo - Eastern Feed
+  streamName: TelemundoEast
+  path: /channel/telemundo-eastern-feed
+  id: telemundo-eastern-feed
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/telemundo-us.png?raw=true
+- name: VH1 - Eastern Feed
+  streamName: VH1East
+  path: /channel/vh1-eastern-feed
+  id: vh1-eastern-feed
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/vh1-us.png?raw=true
+- name: CBS (KCBS) Los Angeles
+  streamName: cbs-kcbs-los-angeles-ca
+  path: /channel/cbs-kcbs-los-angeles-ca
+  id: cbs-kcbs-los-angeles-ca
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cbs-news-us.png?raw=true
+- name: MTV 2 East
+  streamName: mtv-2-east
+  path: /channel/mtv-2-east
+  id: mtv-2-east
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/mtv-2-us.png?raw=true
+- name: CW (WDCW) District of Columbia
+  streamName: cw-wdcw-district-of-columbia
+  path: /channel/cw-wdcw-district-of-columbia
+  id: cw-wdcw-district-of-columbia
+  logo: https://en.wikipedia.org/wiki/WDCW#/media/File:DC_News_Now_logo_2022.jpg
+- name: MSNBC USA
+  streamName: MSNBC
+  path: /channel/msnbc-usa
+  id: msnbc-usa
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/msnbc-alt-us.png?raw=true
+- name: BET Her
+  streamName: BETHerEast
+  path: /channel/bet-her
+  id: bet-her
+  logo: http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s14897_dark_360w_270h.png
+- name: Fanduel Sports Southeast North Carolina
+  streamName: fanduel-sports-southeast-north-carolina
+  path: /channel/fanduel-sports-southeast-north-carolina
+  id: fanduel-sports-southeast-north-carolina
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fanduel-tv-us.png?raw=true
+- name: The Tennis Channel
+  streamName: TennisChannel
+  path: /channel/the-tennis-channel
+  id: the-tennis-channel
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/tennis-channel-us.png?raw=true
+- name: BET - Eastern Feed
+  streamName: BETEast
+  path: /channel/bet-eastern-feed
+  id: bet-eastern-feed
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/bet-us.png?raw=true
+- name: NewsMax TV
+  streamName: NewsmaxTV
+  path: /channel/newsmax-tv
+  id: newsmax-tv
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/newsmax-tv-us.png?raw=true
+- name: ReelzChannel
+  streamName: Reelz
+  path: /channel/reelzchannel
+  id: reelzchannel
+  logo: http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s52199_dark_360w_270h.png
+- name: SundanceTV USA - East
+  streamName: SundanceTVEast
+  path: /channel/sundancetv-usa-east
+  id: sundancetv-usa-east
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/sundance-tv-us.png?raw=true
+- name: Sportsnet Ontario
+  streamName: sportsnet-ontario
+  path: /channel/sportsnet-ontario
+  id: sportsnet-ontario
+  logo: https://static.wikia.nocookie.net/logopedia/images/b/be/Rogers_Sportsnet_Ontario_thumb.png/revision/latest?cb=20160514183500
+- name: Sportsnet 360
+  streamName: sportsnet-360
+  path: /channel/sportsnet-360
+  id: sportsnet-360
+  logo: https://w7.pngwing.com/pngs/746/852/png-transparent-sportsnet-360-cfac-calgary-flames-national-hockey-league-others-text-logo-world.png
+- name: National Geographic Wild
+  streamName: NationalGeographicWildEast
+  path: /channel/national-geographic-wild
+  id: national-geographic-wild
+  logo: http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s66804_dark_360w_270h.png
+- name: C-SPAN 2
+  streamName: CSPAN2
+  path: /channel/cspan-2
+  id: cspan-2
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/c-span-2-us.png?raw=true
+- name: Chicago Sports Network
+  streamName: chicago-sports-network
+  path: /channel/chicago-sports-network
+  id: chicago-sports-network
+  logo: https://upload.wikimedia.org/wikipedia/en/6/68/Chicago_Sports_Network_Logo.png
+- name: Oprah Winfrey Network USA Eastern
+  streamName: OWNEast
+  path: /channel/oprah-winfrey-network-usa-eastern
+  id: oprah-winfrey-network-usa-eastern
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/oprah-winfrey-network-us.png?raw=true
+- name: CW (KFMB-TV2) San Diego
+  streamName: cw-kfmbtv2-san-diego-ca
+  path: /channel/cw-kfmbtv2-san-diego-ca
+  id: cw-kfmbtv2-san-diego-ca
+  logo: https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/cw-us.png
+- name: Altitude Sports Denver
+  streamName: altitude-sports-denver
+  path: /channel/altitude-sports-denver
+  id: altitude-sports-denver
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/altitude-sports-us.png?raw=true
+- name: MeTV Wjlp New Jerseynew York
+  streamName: metv-wjlp-new-jerseynew-york
+  path: /channel/metv-wjlp-new-jerseynew-york
+  id: metv-wjlp-new-jerseynew-york
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/me-tv-us.png?raw=true
+- name: SNY Sportsnet New York Comcast
+  streamName: sny-sportsnet-new-york-comcast
+  path: /channel/sny-sportsnet-new-york-comcast
+  id: sny-sportsnet-new-york-comcast
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/sny-us.png?raw=true
+- name: Fox Sports 2
+  streamName: FoxSports2
+  path: /channel/fox-sports-2
+  id: fox-sports-2
+  logo: https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/fox-sports-2-us.png
+- name: Fanduel Sports Network North
+  streamName: fanduel-sports-network-north
+  path: /channel/fanduel-sports-network-north
+  id: fanduel-sports-network-north
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fanduel-tv-us.png?raw=true
+- name: Cinemax - Eastern Feed
+  streamName: CinemaxEast
+  path: /channel/cinemax-eastern-feed
+  id: cinemax-eastern-feed
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cinemax-us.png?raw=true
+- name: Fanduel Sports Network Florida
+  streamName: fanduel-sports-network-florida
+  path: /channel/fanduel-sports-network-florida
+  id: fanduel-sports-network-florida
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fanduel-tv-us.png?raw=true
+- name: Food Network USA - Eastern Feed
+  streamName: FoodNetworkEast
+  path: /channel/food-network-usa-eastern-feed
+  id: food-network-usa-eastern-feed
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/food-network-us.png?raw=true
+- name: Discovery Channel (US) - Eastern Feed
+  streamName: DiscoveryChannelEast
+  path: /channel/discovery-channel-us-eastern-feed
+  id: discovery-channel-us-eastern-feed
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/discovery-channel-us.png?raw=true
+- name: PBS (WNET) New York, NY
+  streamName: WNET
+  path: /channel/pbs-wnet-new-york-ny
+  id: pbs-wnet-new-york-ny
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/pbs-us.png?raw=true
+- name: The Cooking Channel
+  streamName: CookingChannel
+  path: /channel/the-cooking-channel
+  id: the-cooking-channel
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cooking-channel-us.png?raw=true
+- name: MoreMax Eastern
+  streamName: MoreMaxEast
+  path: /channel/moremax-eastern
+  id: moremax-eastern
+  logo: https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/cinemax-moremax-us.png?raw=true
